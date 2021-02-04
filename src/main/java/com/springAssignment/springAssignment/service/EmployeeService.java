@@ -11,5 +11,8 @@ public interface EmployeeService {
 	public Employee getEmployeeById(int empid);
 	
 	public Employee addEmployee(Employee emp);
+	
+    public Employee deletedEmployee(int empid);
+
 }
 	

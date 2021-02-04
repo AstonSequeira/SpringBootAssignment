@@ -49,7 +49,20 @@ public class EmployeServiceimp implements EmployeeService {
 		this.list.add(emp);
 		return emp;
 	}
-		
+	
+	@Override
+    public Employee deletedEmployee(int empid) {
+        Employee e = null;
+        for(Employee emp1:list) {
+            if(emp1.getId()== empid) {
+                e=emp1;
+                this.list.remove(e);
+                break;
+                
+            }
+        }
+        return e;
+    }
 
 
 
