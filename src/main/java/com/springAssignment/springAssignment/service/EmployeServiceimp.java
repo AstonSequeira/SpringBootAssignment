@@ -11,7 +11,7 @@ import com.springAssignment.springAssignment.data.Employee;
 public class EmployeServiceimp implements EmployeeService {
 	
 	List <Employee> list;
-	
+	List <Object> data;
 	
 
 	public EmployeServiceimp() {
@@ -64,6 +64,24 @@ public class EmployeServiceimp implements EmployeeService {
         return e;
     }
 
+
+	@Override
+	public List<Object> getCarDetails() {
+		
+		return this.data;
+		
+	}
+
+	
+	@Override
+	public Object addCarDetails(Object car) {
+		this.data.add(car);
+		return car;
+		
+	}
+
+
+	
 
 
 	

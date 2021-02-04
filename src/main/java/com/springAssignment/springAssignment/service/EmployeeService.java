@@ -8,11 +8,18 @@ public interface EmployeeService {
 
 	public List <Employee> getEmployee();
 	
+	public List <Object> getCarDetails();
+	
 	public Employee getEmployeeById(int empid);
 	
 	public Employee addEmployee(Employee emp);
 	
+	public Object addCarDetails(Object emp);
+	
     public Employee deletedEmployee(int empid);
+
+
+    
 
 }
 	

@@ -36,6 +36,13 @@ public class EmployeeController {
 		
 	}
 	
+	@GetMapping("/cardetails")
+	public List <Object> addCarDetails(){
+		return this.employeeService.getCarDetails();
+		
+		
+	}
+	
 	@GetMapping("/employees/{empid}")
 	public Employee getEmployeeById(@PathVariable int empid) {
 		
@@ -46,6 +53,13 @@ public class EmployeeController {
 	public Employee addEmployee(@RequestBody Employee emp) {
 		
 		return this.employeeService.addEmployee(emp);
+		
+	}
+	
+	@PostMapping("/cardetails")
+	public Object addCarDetails(@RequestBody Object car) {
+		
+		return this.employeeService.addCarDetails(car);
 		
 	}
 	
